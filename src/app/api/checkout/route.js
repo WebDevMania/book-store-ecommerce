@@ -1,3 +1,4 @@
+import getCorsHeaders from "@/lib/apiCors";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_PRIVATE_KEY)
@@ -16,7 +17,7 @@ export async function POST(req) {
 
         console.log(session)
 
-        return new Response(JSON.stringify(session), { status: 200 })
+        return new Response(JSON.stringify(session), { status: 200, headers: getCorsHeaders(req.headers.get("origin") || "") })
     } catch (error) {
         console.log(error)
     }
