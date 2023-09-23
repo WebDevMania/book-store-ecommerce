@@ -1,0 +1,68 @@
+.container {
+    height: calc(100vh - 75px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url("../../app/assets/bookshelf.jpg");
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    position: absolute;
+    top: 13.5rem;
+    left: 10rem;
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-size: 50px;
+    color: white;
+}
+
+.desc {
+    font-size: 22px;
+    color: #efefef;
+}
+
+.inputContainer {
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+    padding-right: 0rem;
+    border: 1px solid white;
+    border-radius: 12px;
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.inputContainer>input {
+    border: none;
+    outline: none;
+    padding-left: 0.5rem;
+    width: 80%;
+    height: 100%;
+    transition: 150ms;
+}
+
+.inputContainer > input:focus{
+    padding-left: 0.75rem;
+}
+
+.inputContainer > button{
+    border: none;
+    outline: none;
+    width: 20%;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.inputContainer > button:hover{
+    background-color: var(--primary-color-darker);
+}

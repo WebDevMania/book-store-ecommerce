@@ -1,0 +1,135 @@
+.container{
+    height: calc(100vh - 60px);
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.container > h2{
+    text-align: center;
+    margin: 0;
+    font-size: 44px;
+    margin-bottom: 3.75rem;
+    color: #333;
+}
+
+.wrapper{
+    margin: 0 auto;
+    height: 100%;
+    width: 85%;
+    display: flex;
+    gap: 1rem;
+}
+
+.left{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.book{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.closeBtn{
+    position: absolute;
+    left: 40rem;
+    top: 0.5rem;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+}
+
+.title{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.bookData{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a > .img{
+    width: 175px;
+    height: 275px;
+    object-fit: cover;
+}
+
+.price > span{
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.quantity{
+    font-size: 18px;
+}
+
+.right{
+    flex: 1;
+    padding: 1rem;
+    height: 200px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(237, 232, 232);
+    border-radius: 20px;
+}
+
+.totalBookMsg{
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.subtotalCheckoutBtns{
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.subtotal{
+    font-size: 20px;
+    margin-top: 0.5rem;
+    margin-right: 2.5rem;
+}
+
+.orderNowBtn{
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.orderNowBtn:hover{
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.orderNowBtn:disabled{
+    background-color: #999;
+    color: white;
+}
+
+.noBooks{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 40px;
+    color: #333;
+}

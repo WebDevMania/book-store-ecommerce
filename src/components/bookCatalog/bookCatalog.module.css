@@ -1,0 +1,61 @@
+.container{
+    padding: 5rem 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.titles > h5{
+    font-size: 22px;
+    color: #efefef;
+}
+
+.titles > h2{
+    font-size: 32px;
+    color: #efefef;
+}
+
+.books{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg)
+    }
+}

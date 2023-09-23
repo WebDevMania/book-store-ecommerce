@@ -1,0 +1,43 @@
+.pagination{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 75px;
+    position: relative;
+    width: 50%;
+    user-select: none;
+}
+
+.item{
+    height: 45px;
+    width: 45px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active{
+    border: solid 1px var(--primary-color);
+    border-radius: 50%;
+    scale: 1.05;
+    font-size: 20px;
+}
+
+.nextArrow{
+    border-left: 1px solid var(--primary-color);
+    position: absolute;
+    right: 0;
+    width: 150px;
+}
+
+.previousArrow{
+    border-right: 1px solid var(--primary-color);
+    position: absolute;
+    left: 0;
+    width: 150px;
+}
+
