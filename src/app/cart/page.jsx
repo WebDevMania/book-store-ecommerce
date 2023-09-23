@@ -35,7 +35,7 @@ const Cart = () => {
             }
         })
 
-        const res = await fetch("http://localhost:3000/api/checkout", {
+        const res = await fetch("https://book-store-ecommerce-git-main-webdevmania.vercel.app/api/checkout", {
             headers: {
                 "Content-Type": "application/json",
             },

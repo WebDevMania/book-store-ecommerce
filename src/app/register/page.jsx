@@ -24,7 +24,7 @@ const Register = () => {
         }
 
         try {
-            const res = await fetch("http://localhost:3000/api/register", {
+            const res = await fetch("https://book-store-ecommerce-git-main-webdevmania.vercel.app/api/register", {
                 headers: {
                     "Content-Type": "application/json"
                 },
